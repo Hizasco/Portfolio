@@ -41,10 +41,10 @@ const projectImages = {
     'media/tester2.png'
   ],
   'zaiki': [
-    'media/zaiki-1.jpg',
-    'media/zaiki-2.jpg',
-    'media/zaiki-3.jpg',
-    'media/zaiki-4.jpg'
+    '',
+    '',
+    '',
+    ''
   ],
   'vault-gard': [
     'media/vault-1.png',
