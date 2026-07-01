@@ -16,11 +16,11 @@
 	  <nav class="navbar">
       <div class="logo">Hizasco</div>
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
         <div class="social-btns">
           <a href="https://github.com/Hizasco"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/thomas-isaiah-2927ba360"><i class="fab fa-linkedin-in"></i></a>
@@ -32,12 +32,12 @@
   <div class="container">
 
 
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="small-text">Full-Stack Developer • AI Builder • Cloud Infrastructure Enthusiast</div>
       <h1 class="main-heading">Building AI-powered tools, cloud platforms, and digital products for the future.</h1>
       <p class="short-desc">I build software products focused on communication, developer productivity, cloud technology, AI collaboration, and user empowerment.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
         <a href="https://wa.link/wpzxnb" class="btn btn-outline"><i class="fas fa-handshake"></i> Hire Me</a>
         <a href="https://wa.link/wpzxnb" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </div>
@@ -60,7 +60,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="about">
       <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <div>
@@ -80,7 +80,7 @@
     </section>
 
     <!-- PROJECTS with image galleries -->
-    <section>
+    <section id="projects">
       <h2 class="section-title">Projects</h2>
 
 <!-- ZAICHAT -->
@@ -323,7 +323,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="services">
       <h2 class="section-title">Services</h2>
       <div class="services-grid">
         <div class="service-item"><i class="fas fa-globe" style="color:#00ffc3;"></i><h4>Web Development</h4><p>Modern websites and web applications.</p></div>
@@ -359,7 +359,7 @@
       <p>I believe in sharing progress, experiments, challenges, and lessons while building products publicly. Follow my journey as I continue developing AI-powered tools, cloud systems, and startup projects.</p>
     </section>
 
-    <section>
+    <section id="contact">
       <h2 class="section-title">Let's Work Together</h2>
       <p style="margin-bottom: 25px;">Interested in working together, collaborating, or learning more about my projects? Feel free to reach out.</p>
       <div style="display: flex; gap: 20px; flex-wrap: wrap;">
@@ -385,11 +385,11 @@
     <div class="modal-content">
       <button class="modal-close" onclick="closePreviewModal()">×</button>
       <div class="modal-icon"><i class="fas fa-tools"></i></div>
-      <h3 style="color: #fff;">Active Development</h3>
-      <p>This project is currently in active development. Some demo services may occasionally be unavailable while infrastructure upgrades are in progress.</p>
-      <p style="font-size: 0.9rem; color: #7f9ab0;">If you'd like a private walkthrough or live demo, contact me on WhatsApp.</p>
+      <h3 style="color: #fff;">Still Under Development</h3>
+      <p>This project is still under development, so some links or features may not work as expected.</p>
+      <p style="font-size: 0.9rem; color: #7f9ab0;">If you run into any issues, send me a message on WhatsApp so I can help you out.</p>
       <div class="modal-buttons" style="margin-top: 20px; display: flex; gap: 15px; justify-content: center;">
-        <button class="btn btn-primary" onclick="closePreviewModal()">Proceed Anyway</button>
+        <button class="btn btn-primary" onclick="proceedToPreview()">Proceed Anyway</button>
         <a href="https://wa.link/g4gvnn" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </div>
     </div>
