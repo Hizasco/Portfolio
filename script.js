@@ -237,18 +237,27 @@ function closeVideoModal() {
   document.getElementById('demoVideoIframe').src = '';
 }
 
-// ============ PREVIEW FUNCTION - OPENS ACTUAL URL ============
+// ============ PREVIEW FUNCTION - SHOWS WARNING, THEN OPENS URL ============
+let pendingPreviewUrl = null;
+
 function openPreview(projectKey) {
   const url = projectPreviewUrls[projectKey];
   if (url) {
-    window.open(url, '_blank');
+    pendingPreviewUrl = url;
+    openPreviewModal();
   } else {
     // Fallback if no URL is set
     alert('Preview URL not configured for this project yet.');
   }
 }
 
-// Keep the old modal function for backward compatibility if needed
+function proceedToPreview() {
+  if (pendingPreviewUrl) {
+    window.open(pendingPreviewUrl, '_blank');
+  }
+  closePreviewModal();
+}
+
 function openPreviewModal() {
   document.getElementById('previewModal').classList.add('active');
 }
